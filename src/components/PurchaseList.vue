@@ -1,5 +1,5 @@
 <template>
-  <table v-if="purchases.length">
+  <table id="purchaseList" v-if="purchases.length">
     <thead>
       <th>지점</th>
       <th>고객ID</th>

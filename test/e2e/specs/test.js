@@ -11,9 +11,8 @@ module.exports = {
     browser
       .url(devServer)
       .waitForElementVisible('#app', 5000)
-      .assert.elementPresent('.hello')
-      .assert.containsText('h1', 'Welcome to Your Vue.js App')
-      .assert.elementCount('img', 1)
+      .assert.elementNotPresent('#purchaseList')
+      .assert.containsText('p', '아직 판매된 내역이 없습니다.')
       .end()
   }
 }
